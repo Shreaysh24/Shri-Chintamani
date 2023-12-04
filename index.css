@@ -8,7 +8,7 @@ body{
     background-color: #FFEDDB;   
 }
 .containCenter{
-    padding: 7% 12% 17%;  
+    padding: 7% 12% 17% ;  
     
 }
 .containBottom{
@@ -16,11 +16,11 @@ body{
     
 }
 
-.row {
+/* .row {
     margin-top: calc(-4 * var(--bs-gutter-y))!important; 
     margin-right: calc(-6.5 * var(--bs-gutter-x))!important;
     margin-left: calc(-2* var(--bs-gutter-x))!important;
-}
+} */
 
 /* Title */
 .titleBackground{
@@ -82,6 +82,7 @@ body{
     background-color: #D0D4CA;
     /* border-radius: 30px; */
     margin: 10px 33px 10px;
+    box-sizing: border-box;
 }
 
 .cardImage{
@@ -92,6 +93,7 @@ body{
     margin: 10px 0;
     width: 95%;
     height: 95%;
+    box-sizing: border-box;
 }
 .cardPara{
     text-align: left;
@@ -121,4 +123,11 @@ body{
     font-family: 'Alice', serif;
     font-weight: bold;
     font-size: 15px
+}
+
+@media only screen and (max-width:575px){
+    .containCenter{
+        padding: 7% 12% 17% 8px;  
+    }
+    
 }
